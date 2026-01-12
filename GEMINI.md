@@ -67,4 +67,8 @@ uv run load_sample_data.py
         Since the agent cannot "auto-start" itself, the user must initiate the context restoration.
         *   **Command**: *"Read GEMINI.md and PLANS.md to restore context."*
         *   **Alias Suggestion**: The user is encouraged to create a shell alias (e.g., `rag-resume`) that sends this prompt automatically if their CLI tool supports it.
+
+### 3. File Integrity (Anti-Regression)
+*   **Preservation Rule**: When updating `PLANS.md` or `GEMINI.md`, the Agent must strictly ensure that *no existing sections or uncompleted tasks* are accidentally removed.
+*   **Verification**: Before submitting a `replace` call that rewrites a large section, the Agent must verify it has included all unrelated existing content in the `new_string`.
         
