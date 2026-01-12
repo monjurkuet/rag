@@ -12,8 +12,11 @@ This document tracks future ideas, planned experiments, and maintenance tasks fo
 - [ ] **Baseline RAG (LangChain)**: Implement a simple "Standard RAG" (Chunking + Vector Search) in `implementations/langchain_experiments/` to serve as a baseline for performance comparison against the Hybrid Graph approach.
 - [ ] **Evaluation Framework**: Design a set of standard questions/queries to run against all implementations to objectively measure quality (e.g., using Ragas or DeepEval).
 
-### Maintenance
-- [ ] **Refine Hybrid Graph**: Review the `hybrid_graph_v1` SQL schema for optimization opportunities as the dataset grows.
+## ✅ Completed
+- [x] **Project Structure**: Organized repository into modular `implementations/`, `data/`, and `scripts/` directories.
+- [x] **Security Fix**: scrubbed `.env` from git history using `git-filter-repo`.
+- [x] **Documentation**: Added `README.md` and `LICENSE`.
+- [x] **Context System**: Established `GEMINI.md` and `PLANS.md` protocol for session persistence.
 
 ## 🧊 Backlog / Ideas
 - Explore "Agentic RAG" using LangGraph.
