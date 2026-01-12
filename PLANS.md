@@ -18,6 +18,9 @@ This document tracks future ideas, planned experiments, and maintenance tasks fo
 - [x] **Documentation**: Added `README.md` and `LICENSE`.
 - [x] **Context System**: Established `GEMINI.md` and `PLANS.md` protocol for session persistence.
 
+### Maintenance
+- [ ] **Refine Hybrid Graph**: Review the `hybrid_graph_v1` SQL schema for optimization opportunities as the dataset grows.
+
 ## 🧊 Backlog / Ideas
 - Explore "Agentic RAG" using LangGraph.
 - Test different embedding models (OpenAI vs. Google vs. HuggingFace) using the unified ingestion script.
